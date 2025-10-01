@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    int x = 5;
+
+
+    int kvadrat = x * x;
+    std::cout << "Квадрат: " << kvadrat << std::endl;
+    
+    int kub = x * x * x;
+    std::cout << "Куб " << kub << std::endl;
+
+
+    return 0;
+}
