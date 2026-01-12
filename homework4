@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    double number;
+    
+    std::cout << "Введите число: ";
+    std::cin >> number;
+    
+    std::cout << "Как double: " << number << std::endl;
+    
+    int intNumber = (int)number;
+    std::cout << "Как int: " << intNumber << std::endl;
+    
+    bool boolNumber = (bool)number;
+    std::cout << "Число не равно 0? " << std::boolalpha << boolNumber << std::endl;
+    
+    return 0;
+}
