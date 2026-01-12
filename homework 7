@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, original, reversed = 0, remainder;
+    
+    cout << "Введите число: ";
+    cin >> x;
+    
+    original = x;
+    
+    if (x < 0) {
+        cout << "false" << endl;
+        return 0;
+    }
+    
+    // Переворачиваем число
+    while (x > 0) {
+        remainder = x % 10;
+        reversed = reversed * 10 + remainder; 
+        x = x / 10; 
+    }
+    
+    if (original == reversed) {
+        cout << "true" << endl;
+    } else {
+        cout << "false" << endl;
+    }
+    
+    return 0;
+}
